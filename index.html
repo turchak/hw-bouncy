@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Bouncy</title>
+</head>
+
+<body>
+  <svg width="0" height="0" style="position: absolute">
+      <symbol id="logo" viewBox="0 0 113 19">
+        <title>logo</title>
+        <path d="M631.823,4532.95v-3.25h3.3a1.659,1.659,0,0,1,1.625,1.63,1.618,1.618,0,0,1-1.625,1.62h-3.3Zm0-7.37v-3.25H634.2a1.625,1.625,0,0,1,0,3.25h-2.375Zm4.324,11.42a5.471,5.471,0,0,0,3.374-9.8,5.478,5.478,0,0,0,1.2-3.37,5.661,5.661,0,0,0-5.549-5.58H626.9V4537h9.248Zm8.077-9.35a9.361,9.361,0,1,0,9.348-9.4A9.332,9.332,0,0,0,644.224,4527.65Zm13.822-.02a4.462,4.462,0,1,1-4.474-4.48A4.482,4.482,0,0,1,658.046,4527.63Zm12.752-9.38h-4.949v11.35a7.4,7.4,0,1,0,14.8,0v-11.35H675.7v11.28a2.45,2.45,0,1,1-4.9,0v-11.28ZM700.2,4537v-18.75h-4.923v8.85l-8.873-8.85h-2V4537h4.924v-8.87l8.848,8.87H700.2Zm18.05-16.02a9.275,9.275,0,0,0-6.6-2.73,9.375,9.375,0,1,0,6.648,15.98l-3.5-3.45a4.422,4.422,0,1,1-3.149-7.55,4.392,4.392,0,0,1,3.149,1.22Zm20.475-2.73h-5.674l-3.624,6.25-3.6-6.25H720.15L727,4530.1v6.9h4.874v-6.9Z" transform="translate(-626.906 -4518.25)"/>
+      </symbol>
+    </svg>
+  <header class="header" id="hello">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="nav__logo">
+          <svg class="nav__logo-img">
+                <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a href="#hello" class="nav__menu-item-link" onclick="getPageScroll()">Hello</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#portfolio" class="nav__menu-item-link" onclick="getPageScroll()">Portfolio</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#team" class="nav__menu-item-link">Team</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#contacts" class="nav__menu-item-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__info">
+        <h2 class="header__info-title">We Are Code Cafe</h2>
+        <span class="header__info-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br> praesentium voluptatum</span>
+      </div>
+      <a href="#portfolio" class="header__button">
+        <i class="header__button-icon pe-7s-angle-down"></i>
+      </a>
+    </div>
+  </header>
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="portfolio__header">the portfolio</h2>
+      <span class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium</span>
+      <ul class="portfolio__menu">
+        <li class="portfolio__menu-item">
+          <a href="#" class="portfolio__menu-item-link portfolio__menu-item-link--active" data-filter="*">All Works</a>
+        </li>
+        <li class="portfolio__menu-item">
+          <a href="#" class="portfolio__menu-item-link" data-filter=".print">Print</a>
+        </li>
+        <li class="portfolio__menu-item">
+          <a href="#" class="portfolio__menu-item-link" data-filter=".branding">Branding</a>
+        </li>
+        <li class="portfolio__menu-item">
+          <a href="#" class="portfolio__menu-item-link" data-filter=".web">Web</a>
+        </li>
+        <li class="portfolio__menu-item">
+          <a href="#" class="portfolio__menu-item-link" data-filter=".html">HTML</a>
+        </li>
+      </ul>
+
+
+
+      <ul class="portfolio__list">
+        <li class="portfolio__item print" data-type="print">
+          <img class="portfolio__img" src="assets/img/p-img-1.jpg" alt="Photo">
+        </li>
+        <li class="portfolio__item branding" data-type="branding">
+          <img class="portfolio__img" src="assets/img/p-img-2.jpg" alt="Photo">
+        </li>
+        <li class="portfolio__item web" data-type="web">
+          <img class="portfolio__img" src="assets/img/p-img-3.jpg" alt="Photo">
+        </li>
+        <li class="portfolio__item html" data-type="html">
+          <img class="portfolio__img" src="assets/img/p-img-4.jpg" alt="Photo">
+        </li>
+        <li class="portfolio__item print" data-type="print">
+          <img class="portfolio__img" src="assets/img/p-img-5.jpg" alt="Photo">
+        </li>
+        <li class="portfolio__item branding" data-type="branding">
+          <img class="portfolio__img" src="assets/img/p-img-6.jpg" alt="Photo">
+        </li>
+        <li class="portfolio__item web" data-type="web">
+          <img class="portfolio__img" src="assets/img/p-img-7.jpg" alt="Photo">
+        </li>
+        <li class="portfolio__item html" data-type="html">
+          <img class="portfolio__img" src="assets/img/p-img-8.jpg" alt="Photo">
+        </li>
+        <li class="portfolio__item print" data-type="print">
+          <img class="portfolio__img" src="assets/img/p-img-9.jpg" alt="Photo">
+        </li>
+        <li class="portfolio__item branding" data-type="branding">
+          <img class="portfolio__img" src="assets/img/p-img-10.jpg" alt="Photo">
+        </li>
+        <li class="portfolio__item web" data-type="web">
+          <img class="portfolio__img" src="assets/img/p-img-11.jpg" alt="Photo">
+        </li>
+        <li class="portfolio__item html" data-type="html">
+          <img class="portfolio__img" src="assets/img/p-img-12.jpg" alt="Photo">
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="team" id="team">
+    <div class="container">
+      <h2 class="team__title">the team</h2>
+      <span class="team__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium</span>
+      <div class="team__slider">
+        <div class="team__slider-content">
+          <img class="team__slider-content-img" src="assets/img/team-member.jpg" alt="member">
+          <div class="team__slider-content-description">
+            <div class="team__slider-content-description-author">
+              <h2 class="team__slider-content-description-author-title">Abdullah Noman</h2>
+              <span class="team__slider-content-description-author-text">Creative Director, Code Cafe</span>
+            </div>
+            <span class="team__slider-content-description-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. </span>
+          </div>
+        </div>
+
+        <div class="team__slider-content">
+          <img class="team__slider-content-img" src="assets/img/team-member.jpg" alt="member">
+          <div class="team__slider-content-description">
+            <div class="team__slider-content-description-author">
+              <h2 class="team__slider-content-description-author-title">Abdullah Noman</h2>
+              <span class="team__slider-content-description-author-text">Creative Director, Code Cafe</span>
+            </div>
+            <span class="team__slider-content-description-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. </span>
+          </div>
+        </div>
+
+        <div class="team__slider-content">
+          <img class="team__slider-content-img" src="assets/img/team-member.jpg" alt="member">
+          <div class="team__slider-content-description">
+            <div class="team__slider-content-description-author">
+              <h2 class="team__slider-content-description-author-title">Abdullah Noman</h2>
+              <span class="team__slider-content-description-author-text">Creative Director, Code Cafe</span>
+            </div>
+            <span class="team__slider-content-description-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="talk">
+    <div class="container talk__container">
+      <span class="talk__text">Already Loved Us? Let’s talk!</span>
+      <a href="#contacts" class="talk__button">Contact Us</a>
+    </div>
+
+  </section>
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h2 class="reviews__title">Testimonials</h2>
+      <span class="reviews__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium</span>
+      <div class="reviews__slider">
+        <div class="reviews__slider-container">
+          <img class="reviews__slider-icon" src="assets/img/founder-avatar.jpg" alt="founder">
+          <div class="reviews__slider-description">
+            <span class="reviews__slider-description-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</span>
+            <div class="reviews__slider-description-author">
+              <h3 class="reviews__slider-description-author-title">partho</h3>
+              <span class="reviews__slider-description-author-subtitle">founder, artways bd</span>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-container">
+          <img class="reviews__slider-icon" src="assets/img/founder-avatar.jpg" alt="founder">
+          <div class="reviews__slider-description">
+            <span class="reviews__slider-description-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</span>
+            <div class="reviews__slider-description-author">
+              <h3 class="reviews__slider-description-author-title">pedro</h3>
+              <span class="reviews__slider-description-author-subtitle">founder, artways bd</span>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-container">
+          <img class="reviews__slider-icon" src="assets/img/founder-avatar.jpg" alt="founder">
+          <div class="reviews__slider-description">
+            <span class="reviews__slider-description-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</span>
+            <div class="reviews__slider-description-author">
+              <h3 class="reviews__slider-description-author-title">ira</h3>
+              <span class="reviews__slider-description-author-subtitle">founder, artways bd</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="contacts-container">
+      <h2 class="contacts__title">Contact Us</h2>
+      <span class="contacts__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium</span>
+      <div class="contacts__map"></div>
+    </div>
+
+  </section>
+  <footer class="footer" id="footer">
+    <a class="footer__header" href="#">
+      <svg class="footer__header-img">
+            <use xlink:href="#logo"></use>
+      </svg>
+    </a>
+    <span class="footer__text">Copyright 2015. All rights Reserved</span>
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__item-link social__item-link--facebook">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__item-link social__item-link--twitter">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__item-link social__item-link--linkedin">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__item-link social__item-link--instagram">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__item-link social__item-link--vimeo">
+          <i class="fa fa-vimeo" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
+  <script src="//npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3LTkgH_ASYBXH-63RyoCNnklwXscJVek&callback=initMap"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

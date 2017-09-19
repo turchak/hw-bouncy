@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+.fa {
+  line-height: 26px;
+  font-size: 14px;
+  color:$c-white;
+}

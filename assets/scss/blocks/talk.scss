@@ -1,0 +1,36 @@
+.talk {
+  background: url("../img/contact-us-bg.jpg") no-repeat 50% 50%;
+  background-size: cover;
+
+  &__text {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: $c-white;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 58px 0;
+  }
+
+  &__button {
+    margin-top: 30px;
+    display: inline-block;
+    color: $c-white;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 7px 30px;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: $c-white;
+      color: $c-grey-dark;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// Settings
+
+$tablet-p-width: 768px;
+$tablet-l-width: 1024px;
+$desktop-width:  1200px;
+
+// Mixins
+@mixin tablet-min{
+	@media (min-width: #{$tablet-p-width}){
+		@content;
+	}
+}
+@mixin tablet-landscape-min{
+	@media (min-width: #{$tablet-l-width}){
+		@content;
+	}
+}
+@mixin desktop-min{
+	@media (min-width: #{$desktop-width}){
+		@content;
+	}
+}
+@mixin retina{
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+    @content;
+  }
+}

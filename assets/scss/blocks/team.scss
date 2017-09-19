@@ -1,0 +1,73 @@
+.team {
+  &__title {
+    padding-top: 80px;
+    @include title;
+  }
+
+  &__text {
+    @include subtitle;
+  }
+
+  &__slider {
+    position: relative;
+    margin-top: 60px;
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 4px;
+      height: 42px;
+      background: $c-green-light;
+
+    }
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+      &-img {
+        margin-left: 70px;
+      }
+
+
+      &-description {
+        width: 370px;
+        margin-right: 40px;
+        &-author {
+
+          &-title {
+            margin: 0;
+            font-size: 20px;
+            letter-spacing: 0.8px;
+            color: $c-black-light;
+            text-align: right;
+          }
+          &-text {
+            display: block;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-style: italic;
+            color: $c-grey;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 25px;
+            text-align: right;
+            text-transform: uppercase;
+
+
+          }
+        }
+        &-text {
+          display: block;
+          margin-top: 30px;
+          font-size: 14px;
+          line-height: 25px;
+          letter-spacing: 0.7px;
+          text-align: right;
+          color: $c-grey;
+        }
+      }
+    }
+  }
+}

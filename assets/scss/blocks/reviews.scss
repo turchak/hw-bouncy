@@ -1,0 +1,131 @@
+.reviews {
+  height: 100%;
+  background: $c-grey-bg;
+
+  &__title {
+    padding-top: 80px;
+    @include title;
+  }
+
+  &__text {
+    @include subtitle;
+  }
+
+  &__slider {
+
+    display: flex;
+    margin: 60px 0 100px;
+    background: $c-white;
+    box-shadow: 0.7px 0.7px 0 0 #0000000c;
+
+    &-container {
+      display: flex;
+    }
+
+    &-icon {
+      padding: 50px 70px 135px 95px;
+    }
+
+    &-description {
+      padding-top: 60px;
+      max-width: 755px;
+
+      &-text {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.8px;
+        color: $c-grey;
+      }
+
+      &-author {
+        text-transform: uppercase;
+
+        &-title {
+          margin: 30px 0 12px;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 20px;
+          letter-spacing: 0.6px;
+          color: $c-green-light;
+        }
+
+        &-subtitle {
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.6px;
+          color: $c-black-light;
+        }
+      }
+    }
+  }
+  .slick-dots {
+    bottom: 60px;
+  }
+  .slick-dotted.slick-slider {
+    padding-bottom: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.slick-dotted.slick-slider {
+  padding-bottom: 60px;
+  margin-bottom: 80px;
+}
+
+.slick-dots {
+  li {
+    width: 10px;
+    height: 10px;
+  &.slick-active {
+    button {
+      &:before {
+        background:$c-green-light;
+      }
+    }
+  }
+    button {
+      width: 10px;
+      height: 10px;
+      &:before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: transparent;
+        // color: transparent;
+        border: 1px solid $c-green-light;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.slick-initialized .slick-slide {
+  outline: none;
+}
